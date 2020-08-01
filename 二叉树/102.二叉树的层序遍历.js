@@ -2,6 +2,7 @@
  * @lc app=leetcode.cn id=102 lang=javascript
  *
  * [102] 二叉树的层序遍历
+ * 给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
  */
 
 // @lc code=start
@@ -26,8 +27,8 @@ var levelOrder = function (root) {
 		while (len--) {
 			let tem = queue.shift();
 			temArr.push(tem.val);
-			if (tem.left) queue.push(tem.left);
-			if (tem.right) queue.push(tem.right);
+			tem.left && queue.push(tem.left);
+			tem.right && queue.push(tem.right);
 		}
 		res.push(temArr);
 	}

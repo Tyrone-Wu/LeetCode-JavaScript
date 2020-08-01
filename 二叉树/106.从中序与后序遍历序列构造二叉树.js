@@ -2,6 +2,7 @@
  * @lc app=leetcode.cn id=106 lang=javascript
  *
  * [106] 从中序与后序遍历序列构造二叉树
+ * 根据一棵树的中序遍历与后序遍历构造二叉树。
  */
 
 // @lc code=start
